@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Filipe Silva</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1>
+				<a href="index.html">Filipe Silva</a>
+			</h1>
+			<div class="slogan">
+				<h2>Web Designer<br>& Developer</h2>
+				<p>/></p>
+			</div>
+		</div>
+	</header>
+	<section id="mainContent">
+		<article class="mobileFirst">
+			<div class="title">
+				<h3>Responsividade</h3>
+				<h4>Seu site em qualquer tela.</h4>
+			</div>
+			<div class="phoneCase">
+
+			</div>
+		</article>
+		<article class="projects">
+			<div class="portfolio">
+				<div class="call">
+					<h5>[Portfólio]</h5>
+					<h6>Design de interface.</h6>
+				</div>
+				<div class="portfolioRelease">
+					<p>
+						Layout intuitivo para seu público-alvo
+						<a href="http://cargocollective.com/fsilva" target="_blank" id="btnPortfolio">agora</a>
+					</p>
+				</div>
+			</div>
+			<section class="skills">
+				<h5>Know-how</h5>
+				<div class="title">
+					<h6>Principais linguagens e frameworks explorados.</h6>
+				</div>
+				<div class="leftSide">
+					<div>
+						<img src="img/html5.svg" alt="Html5">
+						<p>Html 5</p>
+					</div>
+					<div>
+						<img src="img/css3.svg" alt="CSS3">
+						<p>CSS 3</p>
+					</div>
+					<div>
+						<img src="img/boot.svg" alt="Bootstrap">
+						<p>Bootstrap</p>
+					</div>
+					<div>
+						<img src="img/sass_less.svg" alt="Sass & Less">
+						<p>Sass / Less</p>
+					</div>
+					<div>
+						<img src="img/javascript.svg" alt="Javascript">
+						<p>Javascript</p>
+					</div>
+					<div>
+						<img src="img/cms.svg" alt="CMS">
+						<p>CMS</p>
+					</div>
+				</div>
+				<div class="rightSide">
+					<div>
+						<img src="img/jquery.svg" alt="jQuery">
+						<p>jQuery</p>
+					</div>
+					<div>
+						<img src="img/phonegap.svg" alt="Phonegap">
+						<p>Phonegap</p>
+					</div>
+					<div>
+						<img src="img/php.svg" alt="PHP">
+						<p>PHP</p>
+					</div>
+					<div>
+						<img src="img/lara.svg" alt="Laravel">
+						<p>Laravel</p>
+					</div>
+					<div>
+						<img src="img/ai.svg" alt="Arquitetura de Informação">
+						<p>UI/UX Design </p>
+					</div>
+					<div>
+						<img src="img/wordpress.svg" alt="Wordpress">
+						<p>Wordpress</p>
+					</div>
+				</div>
+			</section>
+		</article>
+		<article class="jobs">
+			<a href="http://www.woohoo.com.br" target="_blank" class="client mainProject">
+				<div>
+					<p>WooHoo</p>
+					<span>via Casa 6D</span>
+				</div>
+			</a>
+			<a href="http://www.bonusesfera.com.br/" target="_blank" class="client mainProject">
+				<div>
+					<p>SuperBônus</p>
+					<span>via Brasil/CT</span>
+				</div>
+			</a>
+			<a href="http://cbn.globoradio.globo.com/" target="_blank" class="client mainProject">
+				<div>
+					<p>CBN</p>
+					<span>via Microwave</span>
+				</div>
+			</a>
+			<a href="http://cenografia.com/" target="_blank" class="client default">
+				<div>
+					<p>P&G<br>Cenografia</p>
+					<span>via Casa 6D</span>
+				</div>
+			</a>
+			<a href="http://www.ditomaestudio.com.br/" target="_blank" class="client default">
+				<div>
+					<p>Ditoma<br>Estúdio</p>
+					<span>via Casa 6D</span>
+				</div>
+			</a>
+			<a href="http://cagen.com.br/" target="_blank" class="client default">
+				<div>
+					<p>Casagrande<br>Engenharia</p>
+					<span>via Casa 6D</span>
+				</div>
+			</a>
+			<a href="http://www.tcrtelecom.net/" target="_blank" class="client default">
+				<div>
+					<p>TCR<br>Telecom</p>
+					<span>via Casa 6D</span>
+				</div>
+			</a>
+		</article>
+		<article class="contact">
+			<h6>Contato</h6>
+<!-- 			<form name="contactform" method="post" action="send.php">
+				<input type="text" name="nome" placeholder="Nome">
+				<input type="text" name="email" placeholder="Email">
+				<textarea name="txt" cols="30" rows="10" placeholder="Deixe aqui seu contato, dúvida ou solicitação de orçamento. Responderei em breve! "></textarea>
+				<input type="submit" value="Enviar">
+			</form> -->
+			<form method="post" action="contactengine.php">
+				<!-- <label for="Name">Name:</label> -->
+				<input type="text" name="Name" id="Name" placeholder="Nome"/>
+				<!-- <label for="City">City:</label> -->
+				<!-- <input type="text" name="City" id="City" /> -->
+				<!-- <label for="Email">Email:</label> -->
+				<input type="text" name="Email" id="Email" placeholder="Email"/>
+				<!-- <label for="Message">Message:</label><br /> -->
+				<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Deixe aqui seu contato, dúvida ou solicitação de orçamento. Responderei em breve!"></textarea>
+
+				<input type="submit" name="submit" value="Enviar" class="submit-button" />
+			</form>
+		</article>
+	</section>
+	<footer>
+		<section class="head">
+			<div class="wrapper">
+				<p>Clientes / <span>Networking</span></p>
+				<p> Mais sobre mim
+					<a href="https://br.linkedin.com/in/fsilvadev" target="_blank"></a>
+					<a href="http://trampos.co/filipesilva" target="_blank"></a>
+				</p>
+			</div>
+		</section>
+		<section class="clients">
+				<a href="http://cargocollective.com/fsilva/Cultura-Inglesa-Mobile" target="_blank">Cultura Inglesa</a>
+				<a href="http://cargocollective.com/fsilva/Lookbook-GNT" target="_blank">GNT</a>
+				<a href="http://cargocollective.com/fsilva/Globosat" target="_blank" class="element">Globosat</a>
+				<a href="http://www.navio1000-transpetro.com.br/" target="_blank">Transpetro</a>
+		</section>
+	</footer>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

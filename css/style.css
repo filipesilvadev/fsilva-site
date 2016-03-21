@@ -1,0 +1,617 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1;background: #181818;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300);
+
+.wrapper{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding: 0 40px;
+	box-sizing:border-box;
+}
+
+header{
+	background: #000;
+	border-bottom: 1px solid #000;
+}
+
+header h1 {
+	width: 170px;
+	height: 200px;
+	display: inline-block;
+	margin: 35px 0px -110px;
+	position: relative;
+	z-index: 10;
+}
+
+header h1 a {
+	width: inherit;
+	height: inherit;
+	display: inline-block;
+	color: transparent;
+	background: url('../img/mainLogo.png')no-repeat;
+	background-size: contain;
+}
+
+.slogan{
+	width: 304px;
+	display: inline-block;
+	float: right;
+	margin-top: 35px;
+}
+
+.slogan h2,
+.slogan p {
+	display: inline;
+	font-family: 'Arvo', sans-serif;
+}
+
+.slogan h2{
+	color: #fff;
+	font-size: 1.875em;
+	text-transform: uppercase;
+	font-weight: 100;
+	float: left;
+}
+
+.slogan p {
+	color: rgba(255, 255, 255, 0.2);
+	font-size: 4em;
+}
+
+#mainContent{
+	width: 100%;
+	display: inline-block;
+	background: transparent;
+	padding-bottom: 300px;
+	background: #000 url("../img/footerBg.jpg") no-repeat scroll 0% 100% / contain;
+}
+
+#form #mainContent{
+	background: url("../img/wooBg2.jpg") !important;
+	text-align: center;
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+	padding-top: 5%;
+}
+
+#form #mainContent h1{
+	font-size: 2em;
+	margin-bottom: 60px;
+}
+
+#form #mainContent a{
+	color: #fff;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+#form {
+	background: #323232 none repeat scroll 0% 0%;
+}
+
+#mainContent article{
+	display: inline-block;
+	float: left;
+	padding: 9%;
+	box-sizing: border-box;
+}
+
+
+
+.mobileFirst{
+	width: 40%;
+	background: url('../img/woodBg.jpg')repeat;
+	padding-bottom: 12% !important;
+}
+
+.mobileFirst .title h3{
+	font-family: "Open Sans",sans-serif;
+	font-size: 1.35em;
+	font-weight: 900;
+	color: #000;
+	margin: 0px 0px 10px 2px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 0 0 0 4.5%;
+}
+
+.mobileFirst .title h4{
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	margin-bottom: 30px;
+	font-weight: 100;
+	font-size: 3.5em;
+	line-height: 50px;
+	padding: 0 3% 0 5%;
+}
+
+.mobileFirst .phoneCase {
+	width: 100%;
+	height: 577px;
+	display: inline-block;
+	text-align: center;
+	background: transparent url("../img/iphone.png") no-repeat scroll center / contain;
+}
+
+.phoneCase .screen {
+	width: 100%;
+	height: 440px;
+	max-width: 279px;
+	display: block;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	margin: -1px auto 0 auto;
+	border-left: 6px solid #9D9EA1;
+	border-right: 6px solid #9D9EA1;
+	overflow: scroll;
+}
+
+.phoneCase img{
+	max-width: 100%;
+	display: inline-block;
+	overflow: scroll;
+	
+}
+
+.phoneCase .top{
+	width: 290px;
+	margin: 0px auto;
+	height: 70px;
+	background: transparent url("../img/phone_top.png") no-repeat scroll 0% 0% / contain;
+	display: block;
+}
+
+.phoneCase .left{
+	background: url("../img/phone_left.jpg")repeat-y;
+	display: inline-block;
+	width: 11.5px;
+	float: left;
+	padding: 230px 0;
+	background-size: contain;
+}
+
+.phoneCase .right{
+	background: url("../img/phone_right.jpg")repeat-y;
+	display: inline-block;
+	width: 11.5px;
+	float: left;
+	padding: 230px 0;
+	background-size: contain;
+}
+
+.phoneCase .bottom{
+	width: 290px;
+	margin: 0 auto;
+	padding: 35.5px 0px;
+	background: transparent url("../img/phone_bottom.png") no-repeat scroll 0% 0% / contain;
+	display: block;
+	top: 100%;
+	position: relative;
+}
+
+.projects{
+	width: 60%;
+	background: url('../img/woodBg2.jpg')repeat;
+}
+
+.portfolio{
+	background: #131313;
+	display: none;
+	border-bottom: 1px solid #FFFFE1;
+}
+
+.portfolio h5 {
+	font-family: "Open Sans",sans-serif;
+	color: #FFAB00;
+	font-weight: 900;
+	font-size: 1.35em;
+	letter-spacing: 2.65px;
+	margin: 0px 0px 10px 3px;
+	text-transform: uppercase;
+}
+
+.portfolio h6 {
+	font-family: "Lato", sans-serif;
+	color: #fff;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 1.995em;
+}
+
+.portfolio div{
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+}
+
+.portfolio .call{
+	width: 40%;
+	padding: 10.6% 5%;
+	background: url('../img/callBg.jpg')no-repeat;
+	background-size: cover;
+}
+
+.portfolioRelease{
+	width: 60%;
+	padding: 13.8% 17%;
+	background: url("../img/triangleCall.jpg") no-repeat scroll 50% 35%;
+}
+
+.portfolio .portfolioRelease p,
+.portfolio .portfolioRelease a{
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	font-weight: 100;
+	line-height: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+.portfolio .portfolioRelease a{
+	color: #FFAB00;
+}
+
+.portfolio .portfolioRelease a:hover {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.skills {
+	margin-top: 60px;
+}
+
+.skills .title {
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+.skills h5{
+	font-family: "Arvo",sans-serif;
+	font-size: 2.35em;	
+	color: #FFAB00;
+	text-shadow: -2px -3px #000;
+}
+
+.skills .title h6{
+	color: #FF9;
+	font-family: "Lato",sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	margin: -20px 0 0 0;
+	background: rgba(0, 0, 0, 0.95);
+}
+
+.skills .leftSide {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.skills .rightSide {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.skills .leftSide div,
+.skills .rightSide div {
+	display: block;
+	clear: both;
+	background: rgba(255, 255, 255, 0.4) none repeat scroll 0% 0%;
+	margin: 5px 5px 5px 0px;
+	padding-left: 5px;
+}
+
+.skills img{
+	height: 40px;
+	display: inline-block;
+	float: left;
+	background: #2A2A2A none repeat scroll 0% 0%;
+	padding: 10px;
+	margin: 5px 0;
+}
+
+.skills p{
+	font-family: "Open Sans",sans-serif;
+	font-size: 1.4em;
+	padding: 23.5px 0px 23.5px 70px;
+	font-weight: 100;
+}
+
+.jobs{
+	width: 60%;
+	padding: 0 !important;
+	float: right !important;
+}
+
+.jobs a {
+	display: inline-block;
+	color: transparent;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+}
+
+.jobs a[href="http://cbn.globoradio.globo.com/"]{
+	background: #E32C33 url("../img/clt_cbn.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://www.bonusesfera.com.br/"]{
+	background: #fff url("../img/clt_santander.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://www.woohoo.com.br"]{
+	background: #e6a000 url("../img/clt_woohoo.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://www.ditomaestudio.com.br/"]{
+	background: #0098CF url("../img/clt_ditoma.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://cenografia.com/"]{
+	background: #000 url("../img/clt_pg.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://cagen.com.br/"]{
+	background: #20261c url("../img/clt_cagen.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a[href="http://www.tcrtelecom.net/"]{
+	background: #cfcfcf url("../img/clt_tcr.jpg") no-repeat scroll center / contain;
+}
+
+.jobs a div {
+	display: inline-block;
+    width: 100%;
+    padding: 40.1% 0;
+}
+
+.jobs a div:hover{
+	background-color: rgba(0, 0, 0, 0.85);;
+}
+
+.jobs a:hover{
+	color: #fff
+}
+
+.jobs a.mainProject{
+	width: 33.333333333%;
+}
+
+.jobs a.mainProject p{
+	font-family: 'Arvo', sans-serif;
+	font-size: 2.3em;
+	letter-spacing: -0.5px;
+}
+
+.jobs a.client.default p {
+	font-family: 'Arvo', sans-serif;
+}
+
+.jobs a.client span{
+	font-family: 'Lato', sans-serif;
+	font-size: 0.6em;
+	text-transform: uppercase;
+
+}
+
+.jobs a.client.default{
+	width: 25%;
+}
+
+.jobs a.client.default div{
+	padding: 38% 0px;
+}
+
+.contact{
+	width: 40%;
+	background: url('../img/contactBg.jpg')no-repeat;
+	background-size: cover;
+	padding: 5% 10% !important;
+}
+
+.contact h6{
+	color: #FFF;
+	font-family: "Arvo",sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	margin-bottom: 26px;
+}
+
+.contact input{
+	display: block;
+	width: 90%;
+	margin-bottom: 10px;
+	font-family: "Open Sans",sans-serif;
+	font-size: 1em;
+	padding: 5px 15px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	background: #FFFFCA;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+	background: #fff;
+}
+
+
+.contact input[type="submit"]{
+	width: 75%;
+	display: block;
+	font-family: "Lato",sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	background: transparent none repeat scroll 0% 0%;
+	border: 1px solid #FFF;
+	margin: 15px auto 0px;
+	cursor: pointer;
+	border-radius: 200px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.contact input[type="submit"]:hover{
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0% 0%;
+}
+
+.contact select{
+	width: 100%;
+	padding: 5px 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	margin-bottom: 10px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	background: #ff9;
+}
+
+.contact textarea{
+	max-width: 90%;
+	min-width: 90%;
+	max-height: 100px;
+	font-family: "Open Sans",sans-serif;
+	font-size: 1em;
+	border-radius: 30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-webkit-border-radius: 30px 30px 30px 30px;
+	border: 0px solid #000;
+	padding: 15px;
+	background: #FFFFCA;
+}
+
+.animation{
+	display: inline-block;
+	height: 415px;
+	background: transparent url("../img/animationBg.gif") no-repeat scroll 0% 0% / cover;
+	width: 100%;
+	margin-top: -50px;
+	opacity: 0.2;
+}
+
+footer{
+	background: url('../img/tileBg.jpg');
+	margin-top: -4px;
+
+}
+
+footer .head{
+	display: block;
+	background: #141414;
+
+}
+
+footer .head .wrapper {
+	max-width: 84.5%;
+}
+
+footer .head p{
+    font-family: "Arvo",sans-serif;
+    color: #7D7D7D;
+    background: #0E0E0E none repeat scroll 0% 0%;
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.85em;
+}
+
+footer .head p span{
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+footer .head p:last-child{
+	float: right;
+}
+
+footer .head img{
+	width: 80px;
+	left: 54%;
+	margin: 0px auto -29px;
+	position: absolute;
+}
+
+footer .head a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 0 -4px 10px;
+}
+
+footer .head a:hover{
+	opacity: 0.35;
+}
+
+footer .head a[href="https://br.linkedin.com/in/fsilvadev"] {
+	background: url('../img/in.svg')no-repeat;
+	background-size: cover;
+}
+
+footer .head a[href="http://trampos.co/filipesilva"] {
+	background: url('../img/cv.svg')no-repeat;
+	background-size: cover;
+}
+
+footer .clients{
+    display: inline-block;
+    width: 1024px;
+    margin: 0px auto;
+    left: 50%;
+    margin-left: -512px;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+footer .clients a {
+	color: transparent;
+	width: 229px;
+	height: 49px;
+	margin: 0 13px;
+	display: inline-block;
+	float: left;
+}
+
+footer .clients a[href="http://cargocollective.com/fsilva/Cultura-Inglesa-Mobile"] {
+	background: url('../img/cultura_inglesa.png')no-repeat scroll center;
+}
+
+footer .clients a[href="http://cargocollective.com/fsilva/Lookbook-GNT"] {
+	background: url('../img/gnt.png')no-repeat scroll center;
+}
+
+footer .clients a[href="http://cargocollective.com/fsilva/Globosat"] {
+	background: url('../img/globosat.png')no-repeat scroll center;
+}
+
+footer .clients a[href="http://www.navio1000-transpetro.com.br/"] {
+	background: url('../img/transpetro.png')no-repeat scroll center;
+}
+
+footer .clients a.element{
+	margin: 0 30px 0 0 ;

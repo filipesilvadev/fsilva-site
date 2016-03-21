@@ -1,0 +1,33 @@
+
+@media screen and (min-width: 1269px)  {
+	.portfolioRelease {dding: 13.75% 17%;}	
+}
+
+@media screen and (max-width: 1362px)  {
+	.portfolio h6 {font-size: 197%;}
+	.portfolio .call {padding: 10.6% 4.5%;}
+}
+
+@media screen and (max-width: 1265px)  {
+	.portfolio .call {padding: 10.6% 4%;}
+}
+
+@media screen and (max-width: 1265px)  {
+	.portfolio .call {padding: 10.6% 3.5%;}	
+}
+
+@media screen and (max-width: 1259px)  {
+
+	/* Começa a dar merda no celular !!!!! */
+
+}
+
+@media screen and (max-width: 1189px)  {
+	.portfolio .call {padding: 10.6% 3%;}	
+}
+
+@media screen and (max-width: 1154px)  {
+	.portfolio h5 {font-size: 1em;}
+}
+
+
